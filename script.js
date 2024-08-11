@@ -74,5 +74,6 @@ const allMealArr = allMeal.split("\n")
 
 function random() {
     let i = Math.floor(Math.random() * allMealArr.length + 1);
+    // console.log(i);
     document.getElementById("myRandomMeal").innerHTML = allMealArr[i]
 }
