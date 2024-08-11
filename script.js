@@ -73,7 +73,7 @@ let allMeal =`ผัดกะเพราหมูสับ
 const allMealArr = allMeal.split("\n")
 
 function random() {
-    let i = Math.floor(Math.random() * allMealArr.length + 1);
-    // console.log(i);
+    let i = Math.floor(Math.random() * allMealArr.length);
+    // console.log(i, allMealArr[i]);
     document.getElementById("myRandomMeal").innerHTML = allMealArr[i]
 }
