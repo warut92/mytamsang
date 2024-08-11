@@ -65,11 +65,14 @@ let allMeal =`ผัดกะเพราหมูสับ
 สุกี้แห้งทะเล
 ข้าวต้มกุ้ง
 ข้าวต้มหมูสับ
-ข้าวต้มทะเล`
+ข้าวต้มทะเล
+หมูกระทะ
+ชาบู
+ปิ้งย่าง`
 
 const allMealArr = allMeal.split("\n")
 
 function random() {
-    let i = Math.floor(Math.random() * allMealArr.length);
+    let i = Math.floor(Math.random() * allMealArr.length + 1);
     document.getElementById("myRandomMeal").innerHTML = allMealArr[i]
 }
